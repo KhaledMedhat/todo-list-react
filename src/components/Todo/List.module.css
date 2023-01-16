@@ -1,0 +1,64 @@
+.checked {
+   opacity: 0.6;
+}
+
+.checked:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 0%;
+    height: 3px;
+    background: #e16428;
+    animation: strikeitem 0.5s ease-out 0s forwards;
+}
+
+@keyframes strikeitem {
+    to {
+      width: calc(100% + 1rem);
+    }
+  }
+
+.task {
+    font-size: 28px;
+    line-height: 32px;
+    position: relative;
+}
+
+
+
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 70%;
+    overflow-wrap: break-word;  
+}
+
+.info p {
+    margin: 0; 
+}
+
+li{ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:27px 50px 27px 50px; 
+}
+
+
+li p:last-child{
+    font-size: 16px ;
+}
+
+ button {
+    border: none;
+    background: none;
+    cursor: pointer;
+ }
+
+
+
+
+
+ 
